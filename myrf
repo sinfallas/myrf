@@ -2,12 +2,34 @@
 # Made by Sinfallas <sinfallas@yahoo.com>
 # Licence: GPL-2
 LC_ALL=C
+
 if [[ "$EUID" != "0" ]]; then
 	echo -e "\e[00;31mERROR: DEBES SER ROOT\e[00m"
 	exit 1
 fi
 
+case "$1" in
+	apagartodo)
+		rfkill block all
+		;;
 
+	encendertodo)
+		rfkill unblock all
+		;;
 
+	listar)
+
+		;;
+
+	resetear)
+		rfkill block all
+		rfkill unblock all
+		;;
+
+	*)
+            	echo "USO: $(basename $0) {apagartodo|encendertodo|listar|resetear}"
+		;;
+
+esac
 
 exit 0
