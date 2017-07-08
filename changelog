@@ -1,4 +1,16 @@
-commit 81a2fac9e25537f2cb1ba69ff72d7f34217f5ee0 (HEAD, origin/master, origin/HEAD, master)
+commit 72215f2ba1152cf9d322c0e879bb070d81aa8d99 (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sat Jul 8 13:55:33 2017 -0400
+
+    * se coloca el codigo para encender, apagar y resetear
+
+commit c3d340e75655e811d3ce609ac2640b1960658217
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sat Jul 8 13:23:51 2017 -0400
+
+    * changelog
+
+commit 81a2fac9e25537f2cb1ba69ff72d7f34217f5ee0
 Author: jose perez <sinfallas@gmail.com>
 Date:   Sat Jul 8 13:23:35 2017 -0400
 
