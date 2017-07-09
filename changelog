@@ -1,4 +1,17 @@
-commit 72215f2ba1152cf9d322c0e879bb070d81aa8d99 (HEAD, origin/master, origin/HEAD, master)
+commit 57df405e44c9c7527729875a47cf7a6f9cfda193 (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sun Jul 9 16:59:29 2017 -0400
+
+    * se elimina una funcion innecesaria
+    * se coloca el texto de ayuda
+
+commit f13dec28886f24e3188892ab6dbf2ae1b31641ef
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sat Jul 8 13:56:00 2017 -0400
+
+    * changelog
+
+commit 72215f2ba1152cf9d322c0e879bb070d81aa8d99
 Author: jose perez <sinfallas@gmail.com>
 Date:   Sat Jul 8 13:55:33 2017 -0400
 
