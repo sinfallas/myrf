@@ -17,17 +17,16 @@ case "$1" in
 		rfkill unblock all
 		;;
 
-	listar)
-
-		;;
-
 	resetear)
 		rfkill block all
 		rfkill unblock all
 		;;
 
 	*)
-            	echo "USO: $(basename $0) {apagartodo|encendertodo|listar|resetear}"
+            	echo "uso: $(basename $0) opciones"
+		echo "apagartodo		Apaga todos los dispositivos inalambricos"
+		echo "encendertodo		Enciende todos los dispositivos inalambricos"
+		echo "resetear			Resetea todos los dispositivos inalambricos"
 		;;
 
 esac
