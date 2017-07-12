@@ -2,6 +2,8 @@
 # Made by Sinfallas <sinfallas@yahoo.com>
 # Licence: GPL-2
 LC_ALL=C
+trap "rm -f /run/$(basename $0).pid; exit" 0 1 2 3 15
+echo "$BASHPID" > /run/$(basename $0).pid
 
 if [[ "$EUID" != "0" ]]; then
 	echo -e "\e[00;31mERROR: DEBES SER ROOT\e[00m"
@@ -30,5 +32,5 @@ case "$1" in
 		;;
 
 esac
-
+rm -f /run/$(basename $0).pid
 exit 0
