@@ -1,4 +1,16 @@
-commit 93d6f029359acc2eba7e210e74dd200147a524b3 (HEAD, origin/master, origin/HEAD, master)
+commit 7b5225680c24b8d30e8c403da652ed635f5c2f82 (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Wed Jul 19 20:24:05 2017 -0400
+
+    * shellcheck
+
+commit 72caf2048b117794f3c704717f89a642bab35b40
+Author: jose perez <sinfallas@gmail.com>
+Date:   Wed Jul 19 19:53:59 2017 -0400
+
+    * changelog
+
+commit 93d6f029359acc2eba7e210e74dd200147a524b3
 Author: jose perez <sinfallas@gmail.com>
 Date:   Wed Jul 19 19:48:56 2017 -0400
 
