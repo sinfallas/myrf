@@ -2,11 +2,11 @@
 # Made by Sinfallas <sinfallas@yahoo.com>
 # Licence: GPL-2
 LC_ALL=C
-trap "rm -f /run/$(basename $0).pid; exit" 0 1 2 3 15
-echo "$BASHPID" > /run/$(basename $0).pid
+trap 'rm -f /run/$(basename "$0").pid; exit' 0 1 2 3 15
+echo "$BASHPID" > /run/$'(basename "$0")'.pid
 
 if [[ "$EUID" != "0" ]]; then
-	echo -e "\e[00;31mERROR: DEBES SER ROOT\e[00m"
+	echo -e "\\e[00;31mERROR: DEBES SER ROOT\\e[00m"
 	exit 1
 fi
 
@@ -25,12 +25,12 @@ case "$1" in
 		;;
 
 	*)
-            	echo "uso: $(basename $0) opciones"
+            	echo "uso: $(basename "$0") opciones"
 		echo "apagartodo		Apaga todos los dispositivos inalambricos"
 		echo "encendertodo		Enciende todos los dispositivos inalambricos"
 		echo "resetear			Resetea todos los dispositivos inalambricos"
 		;;
 
 esac
-rm -f /run/$(basename $0).pid
+rm -f /run/$'(basename "$0")'.pid
 exit 0
