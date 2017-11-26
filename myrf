@@ -13,24 +13,28 @@ fi
 case "$1" in
 	apagartodo)
 		rfkill block all
+		echo -e "\e[00;1;92mFinalizado...\e[00m"
 		;;
 
 	encendertodo)
 		rfkill unblock all
+		echo -e "\e[00;1;92mFinalizado...\e[00m"
 		;;
 
 	resetear)
 		rfkill block all
 		rfkill unblock all
+		echo -e "\e[00;1;92mFinalizado...\e[00m"
 		;;
 
 	instalar)
 		apt-get -q update
 		apt-get -qy install rfkill
+		echo -e "\e[00;1;92mFinalizado...\e[00m"
 		;;
 
 	*)
-            	echo "uso: $(basename "$0") opciones"
+            	echo "uso: $(basename $0) opciones"
 		echo "apagartodo		Apaga todos los dispositivos inalambricos"
 		echo "encendertodo		Enciende todos los dispositivos inalambricos"
 		echo "resetear			Resetea todos los dispositivos inalambricos"
