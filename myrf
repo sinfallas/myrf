@@ -24,11 +24,17 @@ case "$1" in
 		rfkill unblock all
 		;;
 
+	instalar)
+		apt-get -q update
+		apt-get -qy install rfkill
+		;;
+
 	*)
             	echo "uso: $(basename "$0") opciones"
 		echo "apagartodo		Apaga todos los dispositivos inalambricos"
 		echo "encendertodo		Enciende todos los dispositivos inalambricos"
 		echo "resetear			Resetea todos los dispositivos inalambricos"
+		echo "instalar			Instala las herramientas necesarias"
 		;;
 
 esac
