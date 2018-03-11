@@ -1,4 +1,16 @@
-commit daa439e3cd635328e6ab65ecbe115fe14ea06c48 (HEAD, origin/master, origin/HEAD, master)
+commit 9b6303086fabd6a05e0fcd10625178f8e71c6946 (HEAD -> master, origin/master, origin/HEAD)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sat Mar 10 21:43:20 2018 -0400
+
+    * archivo travis
+
+commit ef6153f0363d38c97c398e0012731043f74b9880
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sun Nov 26 13:39:07 2017 -0400
+
+    * changelog
+
+commit daa439e3cd635328e6ab65ecbe115fe14ea06c48
 Author: jose perez <sinfallas@gmail.com>
 Date:   Sun Nov 26 13:38:51 2017 -0400
 
